@@ -16,7 +16,7 @@ def main():
         file.write(content)
 
     # read_file_pd
-    content_pd = ipt.read_file_pd("data/random_table.txt")
+    content_pd = ipt.read_file_pd("data/random_table.csv")
     print(content_pd)
     with open("data/res.txt", "a") as file:
         file.write(content_pd)
