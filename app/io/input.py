@@ -21,7 +21,12 @@ def read_file(file_path):
     Raises:
         FileNotFound: File or directory does not exist.
     """
-    pass
+    try:
+        with open(file_path, "r") as file:
+            content = file.read()
+        return content
+    except FileNotFoundError:
+        raise FileNotFoundError(f"File not found: {file_path}")
 
 
 def read_file_pd(file_path):
