@@ -1,4 +1,10 @@
 def read_input():
+    """
+    Reads user's input from the console.
+
+    Returns:
+        str: User's input.
+    """
     pass
 
 
