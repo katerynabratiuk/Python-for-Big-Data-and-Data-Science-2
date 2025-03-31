@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 def read_input():
     """
     Reads user's input from the console.
@@ -42,4 +45,10 @@ def read_file_pd(file_path):
     Raises:
         FileNotFound: File or directory does not exist.
     """
-    pass
+    try:
+        df = pd.read_csv(file_path)
+        if df.empty:
+            return ""
+        return df.to_string(index=False)
+    except FileNotFoundError:
+        raise FileNotFoundError(f"File not found: {file_path}")
