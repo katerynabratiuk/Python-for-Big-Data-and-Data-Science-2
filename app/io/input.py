@@ -5,7 +5,7 @@ def read_input():
     Returns:
         str: User's input.
     """
-    pass
+    return input("Enter text: ")
 
 
 def read_file(file_path):
