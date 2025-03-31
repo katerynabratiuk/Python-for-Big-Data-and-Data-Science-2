@@ -1,0 +1,5 @@
+numpy==25.0.1
+pandas==2.2.2
+matplotlib==3.10.1
+pylint==3.3.6
+black==25.1.0
