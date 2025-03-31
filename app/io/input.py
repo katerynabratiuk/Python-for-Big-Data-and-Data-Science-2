@@ -19,7 +19,7 @@ def read_file(file_path):
         str: Content of the file. Empty string if file is empty.
 
     Raises:
-        FileNotFound: File or directory does not exist.
+        FileNotFoundError: File or directory does not exist.
     """
     try:
         with open(file_path, "r") as file:
